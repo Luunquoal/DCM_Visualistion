@@ -1,4 +1,5 @@
-import * as THREE from 'three/webgpu';
+//import * as THREE from 'three/webgpu';
+import * as DCM from './My_DCM.ts';
 
 const img_elements : HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName("img");
 const input_elements : HTMLCollectionOf<HTMLInputElement> = document.getElementsByTagName("input");
