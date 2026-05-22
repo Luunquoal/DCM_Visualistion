@@ -1,4 +1,3 @@
-//import * as THREE from 'three/webgpu';
 import * as DCM from './My_DCM.ts';
 
 const img_elements : HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName("img");
