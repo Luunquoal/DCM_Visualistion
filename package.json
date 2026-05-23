@@ -24,12 +24,10 @@
     "build_run_win": "npm run clear_win && npm run build_win && nodemon server.cjs"
   },
   "dependencies": {
-    "three": "^0.184.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
-    "@types/three": "^0.184.1",
     "vite": "^8.0.14"
   }
 }

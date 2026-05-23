@@ -1,5 +1,4 @@
 import * as DCM from './My_DCM.js';
-//import * as THREE from '';
 
 const img_elements : HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName("img");
 const input_elements : HTMLCollectionOf<HTMLInputElement> = document.getElementsByTagName("input");
