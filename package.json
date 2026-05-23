@@ -16,10 +16,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy_html_bash" : "cp \"src/index.html\" dist/",
-    "copy_html_batch" : "copy \"src\\index.html\" \"dist\"",
+    "clear_win": "rmdir /s /q dist",
+    "copy_html_bash": "cp \"src/index.html\" \\dist/",
+    "copy_html_batch": "copy \"src\\index.html\" \"dist\\index.html\"",
     "build": "mkdir dist && npm run copy_html_bash && tsc",
-    "build_win": "mkdir dist && npm run copy_html_batch  && tsc"
+    "build_win": " mkdir dist && npm run copy_html_batch  && tsc",
+    "build_run_win": "npm run clear_win && npm run build_win && nodemon server.cjs"
   },
   "dependencies": {
     "three": "^0.184.0",

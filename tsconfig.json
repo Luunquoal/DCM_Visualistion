@@ -8,6 +8,7 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
+    "moduleResolution": "nodenext",
     "target": "es6",
     //"types": [],
     // For nodejs:
@@ -42,8 +43,9 @@
     "skipLibCheck": true,
 
     "paths": {
-      "three/webgpu": ["node_modules/three/build/three.webgpu.js"],
-      "three/tsl": ["node_modules/three/build/three.tsl.js"],
+      "three/webgpu": ["./node_modules/three/build/three.webgpu.js"],
+      "three/tsl": ["./node_modules/three/build/three.tsl.js"],
+      "three": ["./node_modules/three/build/three.module.js"],
     },
   }
 }
