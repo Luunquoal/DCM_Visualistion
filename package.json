@@ -22,7 +22,7 @@
     "build_win": "mkdir dist && npm run copy_html_batch  && tsc"
   },
   "dependencies": {
-    "three": "^0.184.1",
+    "three": "^0.184.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
