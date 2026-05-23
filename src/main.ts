@@ -1,4 +1,5 @@
-import * as DCM from './My_DCM.ts';
+import * as DCM from './My_DCM.js';
+import * as THREE from 'three';
 
 const img_elements : HTMLCollectionOf<HTMLImageElement> = document.getElementsByTagName("img");
 const input_elements : HTMLCollectionOf<HTMLInputElement> = document.getElementsByTagName("input");
@@ -200,7 +201,7 @@ const myBuf = testdcmdata.buffer;//encoder.encode("Hello ArrayBuffer").buffer;
 const introview = new DataView(myBuf, 128);
 
 outputline(arrayBufferToString(myBuf.slice(128, 132)));
-processDCM(myBuf);
+/*processDCM(myBuf);
 
 function processDCM(dcmbuffer : ArrayBuffer){
 	outputline("processing file");
@@ -258,7 +259,7 @@ function processDCM(dcmbuffer : ArrayBuffer){
         }
     }
 }
-
+*/
 function processDCMchunk(file_content_data : {arr : Uint8Array, is_start : boolean}, controller : TransformStreamDefaultController) {
     let index : number = 0;
     // check if we are still at the beginning of the file

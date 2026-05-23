@@ -1,0 +1,33 @@
+{
+  "name": "dcm_visualisation",
+  "version": "1.0.0",
+  "description": "read and render dicom series",
+  "homepage": "https://github.com/Luunquoal/DCM_Visualistion#readme",
+  "bugs": {
+    "url": "https://github.com/Luunquoal/DCM_Visualistion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luunquoal/DCM_Visualistion.git"
+  },
+  "license": "ISC",
+  "author": "https://github.com/Luunquoal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy_html_bash" : "cp \"src/index.html\" /dist/",
+    "copy_html_batch" : "copy \"src\\index.html\" \"dist\"",
+    "build": "mkdir dist && npm run copy_html_bash && tsc",
+    "build_win": "mkdir dist && npm run copy_html_batch  && tsc"
+  },
+  "dependencies": {
+    "three": "^0.184.1",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@types/three": "^0.184.1",
+    "vite": "^8.0.14"
+  }
+}
